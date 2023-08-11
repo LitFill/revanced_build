@@ -54,8 +54,7 @@ if [ "$clean" == 'y' ] || [ "$clean" == 'Y' ]; then
     rm -v \
     $cli \
     $patches \
-    $ints \
-    revanced_$yt_vers.apk
+    $ints
     exit 0
 else
     echo "Invalid input! Keeping files"
