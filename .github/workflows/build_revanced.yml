@@ -24,7 +24,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y curl jq wget
 
-    - name: Run the script
+    - name: Make script executable
       run: |
-        chmod +x ./revanced_build.sh
-        ./revanced_build.sh
+        chmod +x revanced_build.sh
+
+    - name: Run the script (automatically input 'y')
+      run: |
+        yes y | ./revanced_build.sh
