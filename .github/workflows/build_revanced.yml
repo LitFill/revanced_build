@@ -44,7 +44,4 @@ jobs:
       with:
         name: revanced-apk-artifacts  # Name of the artifact
         path: |
-          revanced-cli-*.jar
-          revanced-patches-*.jar
-          revanced-integrations-*.apk
           revanced_*.apk
