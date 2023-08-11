@@ -31,3 +31,10 @@ jobs:
     - name: Run the script (automatically input 'y')
       run: |
         yes y | ./revanced_build.sh
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: revanced-apk-artifacts  # Name of the artifact
+        path: |
+          revanced_$yt_vers.apk
