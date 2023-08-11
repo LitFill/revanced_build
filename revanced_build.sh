@@ -49,19 +49,19 @@ else
     -m $ints \
     -i selected_patches_*.json \
     -o revanced_$yt_vers.apk
-    if [ $clean == '[y|Y]' ]
-    then
-        echo "Cleaning up..."
-        rm -v \
-        $cli \
-        $patches \
-        $ints \
-        revanced_$yt_vers.apk
-        exit 0
-    else
-        echo "Invalid input! Keeping files"
-        exit 3
-    fi
+if [ "$clean" == 'y' ] || [ "$clean" == 'Y' ]; then
+    echo "Cleaning up..."
+    rm -v \
+    $cli \
+    $patches \
+    $ints \
+    revanced_$yt_vers.apk
+    exit 0
+else
+    echo "Invalid input! Keeping files"
+    exit 3
+fi
+
     echo "Done!"
     exit 0
 fi
