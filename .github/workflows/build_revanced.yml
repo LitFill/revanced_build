@@ -26,5 +26,5 @@ jobs:
 
     - name: Run the script
       run: |
-        chmod +x ../../revanced_build.sh
-        ../../revanced_build.sh
+        chmod +x ./revanced_build.sh
+        ./revanced_build.sh
